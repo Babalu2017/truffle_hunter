@@ -33,7 +33,7 @@ function initMap() {
     var markers = [
         {
             coords: {lat:51.52582,lng:-0.13385},
-            content: `<h6>The Wellcome Collection</h6>`
+            content: `<a href="#wellcomeCollection">The Wellcome Collection</a>`
         },
         {
             coords: {lat:51.529972,lng:-0.127676},
@@ -81,7 +81,7 @@ function initMap() {
         },
         {
             coords: {lat:51.529046170320484,lng:-0.250359086664928},
-            content: `<h6>The Collective Old Oak, North Acton/h6>`
+            content: `<h6>The Collective Old Oak, North Acton</h6>`
         },
         ,{
             coords: {lat:51.49238691926185,lng:-0.1588864866661796},
