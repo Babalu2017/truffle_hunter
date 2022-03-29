@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +16,7 @@
 <body>
 
   <!--NAVBAR-->
-  <nav  class="navbar fixed-top navbar-expand-lg" style="background-color: chocolate;">
+  <nav class="navbar fixed-top navbar-expand-lg" style="background-color: var(--red);">
     <div class="container">
       <a href="index.html" class="navbar-brand text-light">Truffle Hunter</a>
       <button class="navbar-toggler second-button " type="button" data-toggle="collapse"
@@ -43,11 +44,11 @@
   <header id="page-header">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 m-auto text-center">
-          <h1 class="display-4 mt-3" style="text-shadow: 4px 4px 5px black;">Get updated</h1>
-          <p class="lead" style="text-shadow: 4px 4px 5px black; letter-spacing: 1px;">
+        <div class="col-md-6 m-auto text-bottom">
+          <!-- <h2 class="truffle" style="color: rgba(255,255,255, 0.7); text-shadow: 4px 4px 5px black;">Truffle Hunter</h2> -->
+          <!-- <p class="lead" style="text-shadow: 4px 4px 5px black; letter-spacing: 1px;">
             We will post our meetups around London monthly.
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -61,25 +62,26 @@
           <div class="card-columns">
             <!-- card one-->
             <div class="card" style=" height: 25rem;">
-              <img src="assets/images/op_working_space.jpg" alt="working space" class="first_meetup img-fluid card-img-top" />
+              <img src="assets/images/op_working_space.jpg" alt="working space"
+                class="first_meetup img-fluid card-img-top" />
               <div class="card-body">
-                <h4 class="card-title">Places to work remotely in London</h4>
-                
+                <h4 class="card-title">Working remotely in London</h4>
+
                 <hr />
-                <button type="button" class="btn btn-outline-danger">
-                  <a style="color: var(--red);" href="whereto.html">read more</a>
+                <button type="button" class="btn" style="background-color: var(--red);">
+                  <a style="color: #fafafa;" href="whereto.html">read more</a>
                 </button>
               </div>
             </div>
 
             <!-- card two-->
             <div class="card" style=" height: 25rem;">
-              <img src="assets/images/op_ambrose_cafe_space2.jpg" alt="" class="second_meetup img-fluid card-img-top" />
+              <img src="assets/images/op_steakhouses.jpg" alt="" class="second_meetup img-fluid card-img-top" />
               <div class="card-body">
-                <h4 class="card-title">Best Steak Houses in London</h4>
+                <h4 class="card-title">Steakhouses in London</h4>
                 <hr />
-                <button type="button" class="btn btn-outline-danger">
-                  <a style="color: var(--red);" href="#">read more</a>
+                <button type="button" class="btn" style="background-color: var(--red);">
+                  <a style="color: #fafafa;" href="#">read more</a>
                 </button>
               </div>
             </div>
@@ -98,13 +100,12 @@
 
             <!-- card three-->
             <div class="card" style=" height: 25rem;">
-              <img src="assets/images/op_w_collection.jpg" alt=""
-                class="third_meetup img-fluid card-img-top" />
+              <img src="assets/images/rooftop_bar_london2.jpg" alt="" class="third_meetup img-fluid card-img-top" />
               <div class="card-body">
-                <h4 class="card-title">Best Rooftop Bars in London</h4>
+                <h4 class="card-title">Rooftop Bars in London</h4>
                 <hr />
-                <button type="button" class="btn btn-outline-danger">
-                  <a style="color: var(--red);" href="#">read more</a>
+                <button type="button" class="btn" style="background-color: var(--red);">
+                  <a style="color: #fafafa;" href="#">read more</a>
                 </button>
               </div>
             </div>
@@ -151,7 +152,7 @@
   </section>
 
   <!--footer-->
-  <footer id="main-footer" class="text-center p-4" style="background-color: chocolate;">
+  <footer id="main-footer" class="text-center p-4" style="background-color: var(--red)">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -175,9 +176,8 @@
     crossorigin="anonymous"></script>
   </script>
   <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
+    async></script>
   <script src="js/main.js"></script>
   <script>
     // Get the current year for the copyright
