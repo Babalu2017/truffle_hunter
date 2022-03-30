@@ -3,33 +3,17 @@ function initMap() {
     // Map Options
     var options = {
         zoom: 10,
-        center: {lat:51.509865,lng:-0.118092}
+        center: {lat:51.509865,lng:-0.118092},
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: true,
+        fullscreenControl: false
     }
 
-    // New Map
-    var map = new google.maps.Map(document.getElementById('map'), options);
 
+    // xxxxxx New Map
+     var map = new google.maps.Map(document.getElementById('map'), options);
 
-    /*
-    // Add Markers
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-    var marker = new google.maps.Marker({
-        position: {lat:51.52582,lng:-0.13385},
-        map: map,
-        // icon: iconBase + 'library_maps.png'
-    });
-
-    // Add Content to the marker
-    var infoWindow = new google.maps.InfoWindow({
-        content: `<h6>The Wellcome Collection</h6>`,
-    });
-
-    marker.addListener('click', function() {
-        infoWindow.open(map, marker);
-    });
-    */
-
-    //Array if markers
+    //Array of markers
     var markers = [
         {
             coords: {lat:51.52582,lng:-0.13385},
@@ -94,22 +78,11 @@ function initMap() {
         }
 
     ]
-
+    
     // Loop through markers array
     for(var i = 0; i < markers.length; i++) {
         addMarker(markers[i]);
     }
-
-
-    // Call addMarker
-    // addMarker({
-    //     coords: {lat:51.52582,lng:-0.13385},
-    //     content: `<h6>The Wellcome Collection</h6>`
-    // });
-    // addMarker({
-    //     coords: {lat:51.529972,lng:-0.127676},
-    //     content: `<h6>The British Library</h6>`
-    // });
     
     // addMarker function
     function addMarker(props) {
@@ -131,3 +104,6 @@ function initMap() {
 
 
 }
+
+
+
