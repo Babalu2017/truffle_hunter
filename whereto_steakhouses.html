@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>truffle hunter</title>
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: black;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-light">Truffle Hunter</a>
+            <button class="navbar-toggler second-button " type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent10" aria-controls="navbarToggleExternalContent10"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span style="display:block"
+                    class="animated-icon2"><span></span><span></span><span></span><span></span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent10">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header>
+        <div class="container">
+            <div id="map"></div>
+        </div>
+    </header>
+
+    <!--INFO SECTION-->
+    <section class="py-3">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h3 class="text-center">Best Steakhouses in London.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p>
+                        We did some digging into the capital’s steak joints (tough job) to make sure you’ll never sit
+                        through a sub-standard chop again Any eatery that wants to serve you steak has nowhere to hide:
+                        the meat must be fabulous, the fire it's cooked on searing, the accompaniments harmonious.
+                        London is a city of restaurants and it's also a city of cacophonous steaks: it's all too easy to
+                        think it'll be a bold statement and instead wish you'd never gone there at all.
+                    </p>
+                    <p>But the city also contains some of the best sirloins and chateaubriands in the world: from USDA
+                        beef to Britain's finest, from Australia to South America, the great and the good of
+                        international cow carving have set up camp in the big smoke. If you want to get the best steak
+                        in the capital, there are plenty of diamonds hiding in the rough. Read our list below the next
+                        time you want to live like a carnivore and you will, rest assured, never put a foot wrong.
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-top my-4 order-1 order-md-2">
+                    <img src="assets/images/op_working_space.jpg" alt="working space" class="rounded img-fluid" />
+                </div>
+            </div>
+
+            <div id="theJones" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">The Jones Family Kitchen</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Located in Belgravia’s slick new development, Eccleston Yards, which
+                        prides itself on being a “wellbeing hub”, The Jones Family Kitchen is, in many ways, an
+                        extension of the original Shoreditch outpost, but with a slightly more relaxed vibe. Renowned
+                        for their melt in your mouth steaks, but with enough options to keep any vegans you might be
+                        dining with happy (not to mention their fully accredited gluten-free menu), the venue
+                        brilliantly combines a classic steakhouse vibe with a thoroughly modern twist.
+                    </p>
+                    <p>Of course, The Jones Family Kitchen’s heroes are their steak dishes, but don’t leave without
+                        trying the truffle mac and cheese and, for dessert, Anna’s triple chocolate brownie accompanied
+                        by cornflake ice cream... Seriously, once you’ve tasted that ice cream, it will linger on your
+                        mind for days – weeks, even – and is almost as much of a draw to the restaurant as the meat.</p>
+                    <p><strong>What's the steak like? </strong>When we visited and took our first mouthfuls of steak,
+                        everyone at the table had just one thing to say: “wow”. Sourced from the famed The Ginger Pig
+                        butchers and immaculately caramelised on a Josper grill, the meat somehow manages to be even
+                        more tender than you’d hoped it would be, making for a truly unforgettable meal. Pair with the
+                        black garlic chimichurri and you’ll throw your head back in pleasure. Yes, it’s that good.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_w_collection.jpg" alt="the wellcome collection"
+                        class="rounded img-fluid" />
+                </div>
+            </div>
+
+            <div id="smith&wollensky" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Smith & Wollensky </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>If you think it’s hard to stand out in the London steak market, try
+                        standing out in New York: yet Smith & Wollensky have managed to succeed on both sides of the
+                        pond, and for good reason</p>
+                    <p>Since it was established in 1977, Smith & Wollensky has focused on providing you with opulent
+                        settings and delicious food, with a focus on America’s finest: 2/3 of their wine list is
+                        American, and their menu features both British cattle and the finest USDA beef. From its art
+                        deco interior to the seasoning of its sides to the quality of the plonk, Smith & Wollensky wants
+                        you to have the best possible version of a steak eating. And honey: you’re going to bloody get
+                        it. Stick around, if you can, for a Bruce Bogtrotter-ready slice of chocolate cake, meant to be
+                        shared by up to 4 people and the size of most heads.</p>
+                    <p><strong>What's the steak like? </strong>Thanks to the meat being cooked in a charbroiler at
+                        1000F, the meat is charred and gnarly on the outside and velveteen in the middle. The USDA beef
+                        in particular- corn-fed, younger and more tender- slaps hard, in particular larger cuts like
+                        tomahawks or cote d’boeuf (they also readily encourage gnawing on the bones.) If you get a
+                        chance to try their Wagyu too, do: whenever it appears, it’s worth experiencing what is,
+                        genuinely, just butter on your tongue.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_ambrose_cafe_space2.jpg" alt="ambrose cafe"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="temper" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Temper Soho</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>The ever-expanding Temper empire (Tempire?) varies its offerings
+                        depending on where you go, but always the aim is the same: a blitzkrieg of bold, left-field
+                        flavours drawing on a varied selection of international cuisines. At their Covent Garden branch,
+                        Temper’s usual focus on grilled meats and flatbreads also expands to include gamechangingly good
+                        detroit style pizzas: imagine a grandma slice souped up by ten thousand times. Their exceptional
+                        tacos remain intact, as does Temper’s almost unparalleled desserts: from the former, the
+                        Cheeseburger and the al pastor are unparalleled; the skillet cookie with fior de latte ice cream
+                        and the bananaramadrama are worth booking a reservation alone.</p>
+                    <p><strong>What's the steak like? </strong>Charred via their audaciously fiery set-up in the middle
+                        of the restaurant, the steak comes perfectly seasoned with just the right mix of gnarl and
+                        yield. Their 90-day aged steak (we went for the t-bone) fits perfectly with everything else they
+                        do: the vegetal funk means each bite is complex and audacious without needing anything else… but
+                        the chimichurri and chipotle mayo on the side are still very welcome.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_british_library.jpg" alt="british library"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+
+            <div id="blacklock" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Blacklock Shoreditch<h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>It can sometimes feel like London does not need another steak-based
+                        franchise, but Blacklock manages to find a niche within them: when Hawksmoor feels too grand,
+                        Flat Iron too slight, Blacklock provides the right blend of meat, cocktails and smoke. If beef
+                        isn’t your thing, then its Barnsley chop remains one of the best in the city.</p>
+                    <p><strong>What's the steak like? </strong> Fatty, smoky, generous... most importantly, it’s
+                        outrageous in all the ways you want a meaty meal out to be.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_sable_d'or2.jpg" alt="sable d'or cafe"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="hawksmoor" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Hawksmoor Borough</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Once you've sampled Hawksmoor, you'll never go anywhere else. The room
+                        is lined with wooden floors and stone beams while the whole place is lit to a golden glow; staff
+                        will provide you with encyclopaedic knowledge of the restaurant's cuts; and the food is, well,
+                        sensational. From the creamy, sweet spinach to the perfectly cooked T-Bone, all dishes here are
+                        of the highest quality and will not leave you disappointed. Better still, the cocktails on offer
+                        are some of the best we've sipped on in the capital. And trust us, we've tried a lot.</p>
+                    <p><strong>What's the steak like? </strong> Sublime. World-class. Mouth-wateringly good. Just go
+                        here now.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_creative_work_space.jpg" alt="creative work space"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="heliot" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Heliot Steak House</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong> is something unique about a restaurant that, thirty minutes into your
+                        meal, has managed to litter your table with fifteen glasses of wine – three for each course, no
+                        less, to match the different tastes. Not that we're complaining, since great wine accompanied
+                        even better food. The pièces de résistances were of course, the different cuts of steak, all
+                        neatly arranged on one large plate. (As you may have realised, Boyd's doesn't go easy on
+                        portions.) The dessert (for which you must adjourn to its own separate seating area) is,
+                        however, perhaps the best bit of the whole experience. Why? Because the concept is to let you
+                        try every single flavour of home-made ice-cream they have made that day, which can be as many as
+                        24 flavours. Say when...</p>
+                    <p><strong>What's the steak like? </strong>Juicy, soft and tender.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_vagabond_coffee_bar2.jpg" alt="vagabond cafe"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="goodman" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Goodman Canary Wharf</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong> There’s fine Australian and Aberdeen angus meat on offer, but the
+                        headliners here are the US grain-fed joints. Environmental disaster. Unparalleled meat. Goodman
+                        offers a 350g New York strip (a sirloin to you or I) and a 400g ribeye, both costing a little
+                        over £20. The cuts are marbled like no other this side of Wagyu, so it’s fantastically soft and
+                        succulent. Don’t bother with the starters - they are, as they should be, support acts at best -
+                        but add some of the very serviceable Béarnaise sauce and chips fried in beef dripping. They
+                        radiate cholesterol, but you won’t find better in W1.</p>
+                    <p><strong>What's the steak like? </strong>Properly aged, thick, minerally, juicy</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_wimbletech_wimbledon.jpg" alt="wimbletech wimbledon"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="lerelais" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Le relais de Venise</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>With just one main dish on the menu, steak frites, this French
+                        establishment does one thing (very) well. Accompanied by its signature salad starter and frites
+                        cut by hand to a specific width, the real magic of Le Renais de Venise lies in its famous
+                        "secret recipe" steak sauce; the ingredients remaining a mystery since its inception in 1959.
+                        Visitors should expect second helpings, ensuring you enjoy your steak frites at their best.
+                        Frenchman Paul Gineste de Saurs opened the original restaurant in Paris and since, it has become
+                        something of an institution. If you’re a regular, you’ll refer to it simply as "L’Entrecote".
+                        Today there are four branches in London, still being run by the daughter of the founder M de
+                        Saurs, Madame Helene Godillot.
+                    </p>
+                    <p><strong>What's the steak like? </strong>Distinctive, melt-in-your-mouth, sliced, flavourful,
+                        unique.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_peckham_pelican.jpg" alt="pelican cafe peckham"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="stk" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">STK Steakhouse</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong> Saturday nights were made for living the life of luxury, however
+                        briefly, a sentiment of which STK London is incarnate. This is no house for a business lunch or
+                        in fact any working hours meal, 5pm being the earliest it'll open its doors, but once it does
+                        you’re in for a good time. Operating under the world-leading The ONE Group, expect only the most
+                        finely prepared food, mouth-watering meats (themselves ranging from Japanese Wagyu to Hereford
+                        Sirloin), all enveloped in an ambiance of high-flying recreation. Little black numbers and
+                        debonair formalwear are strongly advised.</p>
+                    <p><strong>What's the steak like? </strong>Substantial.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_j_harvard.jpg" alt="john harvad library"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="bull" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">The Bull Steak Expert</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Cozy, authentic, unassuming, maybe not the words that suggest one of the
+                        capital’s best destinations for fine foods but once you give it your attention, The Bull Steak
+                        Expert will leave a lasting impression. Serving Argentinian meat and with an impressive wine
+                        selection offered, this is very much a multi-purpose meal tavern. Be it a business dinner, a
+                        social outing with friends and family or if you simply happen across the place on a walk around
+                        Holborn, this is one hidden gem that is certainly worth the slightly above average blow to your
+                        wallet.</p>
+                    <p><strong>What's the steak like? </strong>Juicy, perfectly charred.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_second_home.jpg" alt="second home cafe"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="guinea" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">The Guinea Grill</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>It's the best steak restaurant that you’ve never heard of. From the
+                        outside, The Guinea is just another Mayfair boozer. But take the side entrance and you’ll be
+                        greeted by a man so smartly dressed – top hat, tails – that he could be running the door at
+                        Claridge’s. Seems incongruous with the surroundings? Wait till you head to the pub’s old-school
+                        Grill room (pausing en route to glance inside the refrigerator cabinet showing off the various
+                        cuts of beef on offer), found your white-clothed table, settled into a glass of Rioja and bitten
+                        into a Guinea Grill steak for the first time. Then, and only then, will you realise: for food of
+                        this calibre, a welcome any less grand would be an outrageous insult.</p>
+                    <p><strong>What's the steal like? </strong>So good it’s an institution.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_the_good_hotel.jpg" alt="the good hotel"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="omnino" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Omnino Steakhouse</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Do it like the Argentinians for a south of the Equator “churrascaria”
+                        twist to your steak. At this classy intimate dining room, choose an option smothered in one of
+                        Omnino’s delicious marinades for a fragrant experience. The Set Menu is also quite extraordinary
+                        value: £30 will get you a cocktail, starter, a choice of two steak dishes with a side, a
+                        dessert, a glass of port or coffee and a cheese course.</p>
+                    <p><strong>What's the steak like? </strong>A chimichurri-smothered asado fiesta.
+
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_the_collective_canary_wharf.jpg" alt="the collective canary wharf"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="flat" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Flat Iron Steak</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>An established-yet-easygoing eatery whose reputation is its lifeblood, a
+                        reputation it more than earns with a menu ranging from burgers and beers, to the most filling
+                        and sumptuous steaks and cocktails.</p>
+                    <p><strong>The menu</strong>This is the place to go for affordable priced, rich tasting steak.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_the_collective_old_oak.jpg" alt="the collective old oak"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="boisdale" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Boisdale</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Boisdale isn't just another steak restaurant: it’s a venue for some of
+                        the best jazz in the country, the whisky selection is second to none, and it’s a perfect spot
+                        for cigar smoking with its expansive terrace and walk-in humidor cigar library. The Scottish
+                        kitsch littered around the third floor restaurant jars brilliantly with the modern skyscraper
+                        surroundings of Canary Wharf. You can see why the bankers and hedge fund managers enjoy this
+                        highly clubbable spot so much: it’s like stepping into a smoky Edinburgh bar only metres from
+                        their fluorescent office environments. Turn up for the tasty steaks (or haggis) cooked to
+                        perfection, stay for the excellent jazz. Every trip to Boisdale feels like a treat.</p>
+                    <p><strong>What's the steak like? </strong>The steak is perfect.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_peter_jones_top_floor_restaurant.jpg"
+                        alt="peter jones top floor restaurant" class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+                <div id="popeseye" class="row method_c">
+                    <div class="col-md-6 text-md-left text-sm-center">
+                        <h4 class="text-center">Popeseye Steakhouse</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                        <p><strong>Why go? </strong>The best steak in SW London, simply great cuts, generous portions
+                            and full of flavour in a ’no frills’ restaurant. It’s aways cooked exactly to your
+                            specification. And, sometimes, that's all you need.
+                        <p>
+                        <p><strong>What's the steak like? </strong>Rich, fresh, succulent, generous.</p>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                        <img src="assets/images/op_granger_and_co3.jpg" alt="granger&co cafe"
+                            class="rounded img-fluid border border-secondary" />
+                    </div>
+                </div>
+
+                <div id="mrestaurant" class="row method_c">
+                    <div class="col-md-6 text-md-left text-sm-center">
+                        <h4 class="text-center">M Restaurant</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                        <p><strong>Why go? </strong>You know the staff are mad about beef when the chef, previously from Gaucho, has a labelled tattoo of a cow on his left bicep, and talks you through the cuts as waiters deliver heaving plates of Blackmore Wagyu and USDA Prime T-Bone along with sweet potato mash and Malbec to your intimate booth. While the beef, particularly the T Bone (although the chef called the Blackmore the best in the world), is mind-blowingly good, it’s not just the beef that matters at M. The Italian Restaurant Director, Andre, floats around the bar in a three-piece suit entertaining guests with flawless hospitality, and pops open the bubbly come midnight with the Wine Director to share among his favourite diners. Make sure you’re one of them.
+                        <p>
+                        <p><strong>What's the steak like? </strong>Tender, salty, smokey and huge.</p>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                        <img src="assets/images/op_granger_and_co3.jpg" alt="granger&co cafe"
+                            class="rounded img-fluid border border-secondary" />
+                    </div>
+                </div>
+
+                <div id="lurra" class="row method_c">
+                    <div class="col-md-6 text-md-left text-sm-center">
+                        <h4 class="text-center">Lurra</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                        <p><strong>Why go? </strong>A Basque grill in the heart of Marylebone village – and the sister site of local favourite tapas bar Donostia across the street – Lurra hit the gastro-news late last year when it unveiled its signature cut, a 14-year Rubia Gallega “Galician Blond” Prime Rib, Grade 9, Ÿa novel take on the ageing process that, following its adoption in this country by GQ Food and Drink shortlisted restaurant Kitty Fisher’s, allegedly caused Spanish diary farmers to inundate the country’s abattoirs with elderly members of their milking herds. Fear not, as Lurra’s Grade 9 (non-dairy cow derived) beef is exceptional: flamed to perfection on a wood grill and served very simply with its fat intact (important). Plus, it’s a great environment in which to linger, with a cool, cosmopolitan Euro décor and good, young staff.
+                        <p>
+                        <p><strong>What's the steak like? </strong>14 year Rubia Gallega “Galician Blond” Prime Rib, Grade 9. In other words, f***ing incredible.</p>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                        <img src="assets/images/op_granger_and_co3.jpg" alt="granger&co cafe"
+                            class="rounded img-fluid border border-secondary" />
+                    </div>
+                </div>
+
+                <div id="cut" class="row method_c">
+                    <div class="col-md-6 text-md-left text-sm-center">
+                        <h4 class="text-center">CUT at 45 Park Lane</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                        <p><strong>Why go? </strong>Being the first Wolfgang Puck restaurant in Europe, let alone London, introduced by none other than the Dorchester Collection pretty much instantly qualifies Mayfair’s Cut at 45 Park Lane as being among the finer things in life. Another American export but one we are certainly all the richer for, Cut proffers to its guests the widest and greatest range of London-produced beef, in addition to imports from the US, Japan and Australia. With hours stretching from early morning to late evening, it’s easily the greatest joint breakfast, lunch and dinner opportunity you’re likely to get this side of the Channel.
+                        <p>
+                        <p><strong>What's the steak like? </strong>Possibly the most succulent in London.</p>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                        <img src="assets/images/op_granger_and_co3.jpg" alt="granger&co cafe"
+                            class="rounded img-fluid border border-secondary" />
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2 mt-3">
+                    <a href="#" class="btn btn-outline-warning">go to the top >></a>
+                    <a href="index.html" class="btn btn-outline-warning" style="float:right">go to home >></a>
+                </div>
+
+            
+    </section>
+
+    <!--want collaborate-->
+    <section class="text-center p-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="card text-muted bg-light mb-3">
+                        <div class="card-body px-1">
+                            <h3 class="text-center text-muted">
+                                Do you know new spots in town?
+                            </h3>
+                            <h3>Please let us know we will update our map!</h3>
+                            <p>Required fields are marked *</p>
+                            <hr style="border: 1px solid gray;" />
+                            <form id="my_form" class="was-validated" action="https://formdump.codeinstitute.net"
+                                target="_blank" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="full_name" class="form-control"
+                                                placeholder="* Full Name" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="* Email"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="* Message"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="submit" value="SUBMIT"
+                                                class="btn btn-outline-success btn-block" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <p>Your email address will not be published.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="main-footer" class="text-center p-4" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p style="color: white;">Copyright &copy; <span id="year"></span> Truffle Hunter</p>
+                    <a style="color: #fafafa;" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: #fafafa;" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
+                            class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
+        async></script>
+    <script src="js/mapSteak.js"></script>
+    <script>
+        // Get the current year for the copyright
+        $("#year").text(new Date().getFullYear());
+
+        //reset form
+        const form = document.getElementById('my_form');
+
+        form.addEventListener('submit', function resetHandler(event) {
+            event.preventDefault();
+            form.submit();
+            form.reset();
+        });
+
+
+        //init animated hamburger menu
+        document.querySelector('.second-button').addEventListener('click', function () {
+
+            document.querySelector('.animated-icon2').classList.toggle('open');
+        });
+
+    </script>
+</body>
+
+</html>
