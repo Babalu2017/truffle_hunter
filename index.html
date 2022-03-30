@@ -16,7 +16,7 @@
 <body>
 
   <!--NAVBAR-->
-  <nav class="navbar fixed-top navbar-expand-lg" style="background-color: var(--red);">
+  <nav class="navbar fixed-top navbar-expand-lg" style="background-color: black;">
     <div class="container">
       <a href="index.html" class="navbar-brand text-light">Truffle Hunter</a>
       <button class="navbar-toggler second-button " type="button" data-toggle="collapse"
@@ -68,7 +68,7 @@
                 <h4 class="card-title">Working remotely in London</h4>
 
                 <hr />
-                <button type="button" class="btn" style="background-color: var(--red);">
+                <button type="button" class="btn" style="background-color: lightslategrey;">
                   <a style="color: #fafafa;" href="whereto.html">read more</a>
                 </button>
               </div>
@@ -80,8 +80,8 @@
               <div class="card-body">
                 <h4 class="card-title">Steakhouses in London</h4>
                 <hr />
-                <button type="button" class="btn" style="background-color: var(--red);">
-                  <a style="color: #fafafa;" href="#">read more</a>
+                <button type="button" class="btn" style="background-color: lightslategrey;;">
+                  <a style="color: #fafafa;" href="whereto_steakhouses.html">read more</a>
                 </button>
               </div>
             </div>
@@ -104,24 +104,11 @@
               <div class="card-body">
                 <h4 class="card-title">Rooftop Bars in London</h4>
                 <hr />
-                <button type="button" class="btn" style="background-color: var(--red);">
+                <button type="button" class="btn" style="background-color: lightslategrey;;">
                   <a style="color: #fafafa;" href="#">read more</a>
                 </button>
               </div>
             </div>
-
-            <!-- <div class="cardGherkin card p-3 text-white">
-              <blockquote class="card-blockquote card-body">
-                <p>
-                  12 am @the Gherkin main entrance
-                </p>
-                <footer class="blockquote-footer text-white">
-                  <small class="text-white">Organized by Michael Samuel Jackson
-                    <cite title="Source Title">from SW London</cite></small>
-                </footer>
-              </blockquote>
-            </div> -->
-
           </div>
         </div>
       </div>
@@ -139,7 +126,9 @@
           <p>
             Stay up to date on all the latest info coming out of Truffle Hunter.
           </p>
-          <form action="https://formdump.codeinstitute.net" method="post" target="_blank"
+          <form
+          id="my_form"
+          action="https://formdump.codeinstitute.net" method="post" target="_blank"
             class="form-inline justify-content-center was-validated">
             <input name="name" type="text" class="form-control mb-2 mr-2" placeholder="Full Name" required />
             <input type="email" name="email" class="form-control mb-2 mr-2" placeholder="Email" required />
@@ -152,17 +141,16 @@
   </section>
 
   <!--footer-->
-  <footer id="main-footer" class="text-center p-4" style="background-color: var(--red)">
+  <footer id="main-footer" class="text-center p-4" style="background-color: black">
     <div class="container">
       <div class="row">
         <div class="col">
-          <p style="color: white;">Copyright &copy; <span id="year"></span>Truffle</p>
-          <p>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-              <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
-                alt="CSS Valido!" />
-            </a>
-          </p>
+          <p style="color: white;">Copyright &copy; <span id="year"></span> Truffle Hunter</p>
+          <a style="color: #fafafa;" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="color: #fafafa;" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
+              class="fab fa-pinterest"></i></a>
         </div>
       </div>
     </div>
@@ -178,35 +166,21 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
     async></script>
-  <script src="js/main.js"></script>
+  <script src="js/workRemote.js"></script>
   <script>
+
     // Get the current year for the copyright
     $("#year").text(new Date().getFullYear());
 
-    // Init lightbox
-    $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+    // Reset form after submit
+    const form = document.getElementById('my_form');
+    form.addEventListener('submit', function resetHandler(event){
       event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-
-
-    //init VIDEO PLAY with jquary
-    $(function () {
-      $(".video").click(function () {
-        var theModal = $(this).data("target"),
-          videoSRC = $(this).attr("data-video"),
-          videoSRCauto =
-            videoSRC +
-            "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-        $(theModal + " iframe").attr("src", videoSRCauto);
-        $(theModal + " button.close").click(function () {
-          $(theModal + " iframe").attr("src", videoSRC);
-        });
-      });
+      form.submit();
+      form.reset();
     });
 
     //init animated hamburger menu
-
     document.querySelector('.second-button').addEventListener('click', function () {
 
       document.querySelector('.animated-icon2').classList.toggle('open');
