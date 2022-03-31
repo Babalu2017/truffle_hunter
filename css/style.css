@@ -24,17 +24,14 @@ body {
   /* background-color: var(--gray-dark); */
 }
 
-/* body.is-os #page-header {
-  background-attachment: initial !important;
-  background-size: cover !important;
-} */
+body.is-os #page-header {
+  /* background-attachment: initial !important;
+  background-size: cover !important; */
+  background: url("../assets/images/logo/op_pig_illustration_tattoo7.jpg") center top no-repeat scroll;
+  background-size: auto 100vh;
+}
 
-@supports (-webkit-touch-callout: none) {
-  #page-header {
-      background: url("../assets/images/logo/op_pig_illustration_tattoo7.jpg") center top no-repeat scroll;
-      background-size: auto 100vh;
-  }    
-  }
+
 
 .method_c {
   padding-top: 70px;
