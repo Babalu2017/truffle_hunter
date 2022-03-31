@@ -24,10 +24,10 @@ body {
   /* background-color: var(--gray-dark); */
 }
 
-body.is-os #page-header {
+/* body.is-os #page-header {
   background-attachment: initial !important;
   background-size: cover !important;
-}
+} */
 
 .method_c {
   padding-top: 70px;
@@ -124,13 +124,14 @@ body.is-os #page-header {
   height: 400px;
   width: 100%;
   background: url("../assets/images/logo/op_pig_illustration_tattoo7.jpg") no-repeat center top;
-  /* object-fit: cover; */
-  background-size: cover;
-  /* background-position:auto; */
   background-attachment: fixed;
   color: #fff;
-  /* border-bottom: 1px #eee solid; */
   padding-top: 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 
 .truffle {
