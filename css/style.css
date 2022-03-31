@@ -24,6 +24,11 @@ body {
   /* background-color: var(--gray-dark); */
 }
 
+body.is-os #page-header {
+  background-attachment: initial !important;
+  background-size: cover !important;
+}
+
 .method_c {
   padding-top: 70px;
   margin-top: -50px;
