@@ -11,12 +11,12 @@
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/style.css" />
-  <title>Baba Cafe</title>
+  <title>Truffle Hunter</title>
 </head>
 
 <body>
-<!--NAVBAR-->
-<nav class="navbar fixed-top navbar-expand-lg" style="background-color: black;">
+  <!--NAVBAR-->
+  <nav class="navbar fixed-top navbar-expand-lg" style="background-color: black;">
     <div class="container">
       <a href="index.html" class="navbar-brand text-light">Truffle Hunter</a>
       <button class="navbar-toggler second-button " type="button" data-toggle="collapse"
@@ -78,7 +78,8 @@
               </h3>
               <p class="text-center">Required fields are marked *</p>
               <hr />
-              <form id="my_form" class="was-validated" action="https://formdump.codeinstitute.net"  target="_blank" method="post">
+              <form id="my_form" class="was-validated" action="https://formdump.codeinstitute.net" target="_blank"
+                method="post">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -124,20 +125,21 @@
         </div>
       </div>
     </div>
-</section>
-  
-  
-  
+  </section>
 
-  
-<!--footer-->
-<footer id="main-footer" class="text-center p-4" style="background-color: black">
+
+
+
+
+  <!--footer-->
+  <footer id="main-footer" class="text-center p-4" style="background-color: black">
     <div class="container">
       <div class="row">
         <div class="col">
           <p style="color: white;">Copyright &copy; <span id="year"></span> Truffle Hunter</p>
           <a style="color: #fafafa;" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
+              class="fab fa-twitter"></i></a>
           <a href="#" style="color: #fafafa;" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
               class="fab fa-pinterest"></i></a>
@@ -156,6 +158,8 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
     async></script>
+  <script src="js/main.js"></script>
+
   <script src="js/workRemote.js"></script>
   <script>
 
@@ -164,7 +168,7 @@
 
     // Reset form after submit
     const form = document.getElementById('my_form');
-    form.addEventListener('submit', function resetHandler(event){
+    form.addEventListener('submit', function resetHandler(event) {
       event.preventDefault();
       form.submit();
       form.reset();
