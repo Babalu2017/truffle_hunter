@@ -180,7 +180,7 @@ body {
   /* object-fit: cover; */
   background-size: cover;
   /* background-position:auto; */
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: #fff;
   border-bottom: 1px #eee solid;
   padding-top: 50px;
