@@ -29,6 +29,13 @@ body {
   background-size: cover !important;
 } */
 
+@supports (-webkit-touch-callout: none) {
+  #page-header {
+      background: url("../assets/images/logo/op_pig_illustration_tattoo7.jpg") center top no-repeat scroll;
+      background-size: auto 100vh;
+  }    
+  }
+
 .method_c {
   padding-top: 70px;
   margin-top: -50px;
