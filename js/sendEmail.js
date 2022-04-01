@@ -33,7 +33,7 @@ submitButton.addEventListener('click', function (event) {
             }
 
         );
-        const form = document.getElementById('my_form');
-      form.reset();
-    
+    const form = document.getElementById('my_form');
+    form.reset();
+
 })
