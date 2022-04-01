@@ -1,8 +1,8 @@
 
-let submitButton = document.getElementById('submitBtn');
 
-submitButton.addEventListener('click', function (event) {
+const form = document.getElementById('my_form');
 
+    form.addEventListener('submit', function (event) {
     //prevent the reload of the page. here i prevent the event.
     event.preventDefault();
 
@@ -33,7 +33,7 @@ submitButton.addEventListener('click', function (event) {
             }
 
         );
-    const form = document.getElementById('my_form');
+    
     form.reset();
 
 })
