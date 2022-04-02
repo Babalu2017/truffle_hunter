@@ -1,5 +1,3 @@
-
-
 const form = document.getElementById('my_form');
 
     form.addEventListener('submit', function (event) {
@@ -7,11 +5,12 @@ const form = document.getElementById('my_form');
     event.preventDefault();
 
 
-    let firstName = document.getElementById('name').value;
-    let surname = document.getElementById('surname').value;
-    let number = document.getElementById('telphone_number').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
+    const firstName = document.getElementById('name').value;
+    const surname = document.getElementById('surname').value;
+    const number = document.getElementById('telphone_number').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
 
     //Sending the email with the name and email
     emailjs.send("service_lhay6fq", "Francesco", {
@@ -24,8 +23,17 @@ const form = document.getElementById('my_form');
     })
         .then(
             function (response) {
-                console.log("SUCCESS", response);
-
+                const statusMsg = "Awesome! We got your message!"
+                console.log("SUCCESS", response.status);
+                const msgUser = document.getElementById('messageUser');
+                msgUser.textContent = statusMsg;
+                msgUser.style.color = "green";
+                setTimeout(function(){
+                    if ($('#messageUser').length > 0) {
+                      $('#messageUser').remove();
+                      location.reload()
+                    }
+                  }, 5000);        
             },
             function (error) {
                 console.log("FAILED", error);
