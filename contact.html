@@ -38,10 +38,10 @@
             <a href="index.html" class="nav-link text-light">Home</a>
           </li>
           <li class="nav-item active">
-            <a href="#" class="nav-link text-light">About Us</a>
+            <a href="index.html#about" class="nav-link text-light">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link text-light">Contact</a>
+            <a href="contact.html" class="nav-link text-light">Work with us</a>
           </li>
         </ul>
       </div>
@@ -60,6 +60,71 @@
       </div>
     </div>
   </header>
+
+  <!------------------------ABOUT SECTION-------------------------->
+  <section id="about" class="py-3" style="background-color: black;">
+    <div class="container">
+      <div class="row text-center">
+        <div style="color: #fafafa;" class="col-md-12">
+          <h2>Foodies we need you</h2>
+        </div>
+      </div>
+      <div class="row mt-2 mb-5 text-center" style="color: #fafafa;">
+        <div class="col-md-12">
+          <p class="lead" style="margin-bottom: 0;">
+            As our (foodie) Social & Digital Content Creator, you'll create authentic and engaging video and static
+            content across our website.
+          </p>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div style="color: #fafafa;" class="col-md-12">
+          <h4>Responsability</h4>
+        </div>
+      </div>
+      <div class="row mt-2 mb-3 text-center" style="color: #fafafa;">
+        <div class="col-md-12">
+          <p>
+            Independently conceptualize, shoot and edit original content with a particular focus on social, but also for use on ecomm, web, and email.
+          </p>
+          <p>
+            Bring fresh ideas and experiment with the products to create mouth-watering digital content.
+          </p>
+          <p>
+            Undertake simple retouching and colour correction of your assets.
+          </p>
+          <p> Utilise your knowledge of social platforms and shooting in-platform to create platform-first, socially relevant content.</p>
+          <p>Create assets for social content such as stories, feed posts, sizzle reels and all social-first video formats</p>
+          <p>Work independently to style, shoot, and edit appetite-appealing digital content from home.</p>
+          <p>Collaborate with chefs, influencers and other content creators, curators and crafters</p>
+          <p>Create graphical assets for social media posts
+          </p>
+          <p>Quality check final output and source files.</p>          
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div style="color: #fafafa;" class="col-md-12">
+          <h4>Requirements</h4>
+        </div>
+      </div>
+      <div class="row mt-2 mb-3 text-center" style="color: #fafafa;">
+        <div class="col-md-12">
+          <p>
+            Social-native perspective, thinking about the purpose of content and how to create engaging and performing assets.
+          </p>
+          <p>
+            Experience running both your own person and other brands social media accounts (ideally food related).
+          </p>
+          <p>
+            Knowledge of social platforms, capabilities and best practices inclusive of TikTok, Instagram, Facebook, YouTube, Snapchat, Twitter, LinkedIn and Twitch.
+          </p>
+          <p> Passion for social and cultural trends and keeping up-to-date with the latest ad-formats, best practice and technologies.</p>         
+        </div>
+      </div>
+
+  </section>
 
   <!-- contact us section -->
   <section id="opening-time" class="bg-dark text-muted py-5">
@@ -80,7 +145,7 @@
           <div class="card p-4">
             <div class="card-body">
               <h3 class="text-center">
-                Please fill out this form to contact us or stay up to date.
+                Please fill out this form to collaborate with us.
               </h3>
               <p class="text-center">Required fields are marked *</p>
               <hr />
@@ -93,25 +158,32 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input id="name" type="text" class="form-control" placeholder="* First Name" required />
+                      <input id="fullName" name="from_name" type="text" class="form-control" placeholder="* Full Name"
+                        required />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 input-group mb-3">
+                    <div class="form-group custom-file">
+
+                      <input type="file" name="my_file" class="form-control custom-file-input" id="inputGroupFile01"
+                        required>
+                      <label class="custom-file-label" for="inputGroupFile01">* Upload CV</label>
+                      
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" id="surname" class="form-control" placeholder="* Last Name" required />
+                      <input type="email" name="from_email" id="email" class="form-control" placeholder="* Email"
+                        required />
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="email" id="email" class="form-control" placeholder="* Email" required />
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="number" id="telphone_number" class="form-control" placeholder="Phone Number" />
+                      <input type="number" name="from_number" id="telphone_number" class="form-control"
+                        placeholder="Phone Number" />
                     </div>
                   </div>
                 </div>
@@ -119,16 +191,14 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" id="message" placeholder="* Message" required></textarea>
+                      <textarea class="form-control" name="from_message" id="message" placeholder="* Message"
+                        required></textarea>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
                       <span class="d-block text-center mb-2 text-uppercase" id="messageUser"></span>
-                      <input id="submitBtn" type="submit" value="SUBMIT" class="btn btn-outline-warning btn-block" />
-                      
-                      <!-- <input type="submit" value="SUBMIT" class="btn btn-outline-warning btn-block" /> -->
-
+                      <input id="submitBtn" type="submit" value="SUBMIT" class="btn btn-success btn-block" />
                     </div>
                   </div>
                 </div>
@@ -195,6 +265,7 @@
     });
 
   </script>
+  <script src="js/main.js"></script>
   <script src="js/sendEmail.js"></script>
 </body>
 
