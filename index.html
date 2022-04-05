@@ -11,6 +11,12 @@
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
   <title>truffle hunter</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("b166ofxC1GD8wWnmt");
+    })();
+  </script>
 </head>
 
 <body>
@@ -30,10 +36,10 @@
             <a href="index.html" class="nav-link text-light">Home</a>
           </li>
           <li class="nav-item active">
-            <a href="#" class="nav-link text-light">About Us</a>
+            <a href="#about" class="nav-link text-light">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link text-light">Contact</a>
+            <a href="contact.html" class="nav-link text-light">Work with us</a>
           </li>
         </ul>
       </div>
@@ -42,21 +48,24 @@
 
   <!--HEADER-->
   <header id="page-header">
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
-        <div class="col-md-6 m-auto text-bottom">
-          <!-- <h2 class="truffle" style="color: rgba(255,255,255, 0.7); text-shadow: 4px 4px 5px black;">Truffle Hunter</h2> -->
-          <!-- <p class="lead" style="text-shadow: 4px 4px 5px black; letter-spacing: 1px;">
-            We will post our meetups around London monthly.
-          </p> -->
+        <div class="col-md-6 m-auto">
+          <h2</h2> 
+          <p></p>
         </div>
       </div>
-    </div>
+    </div> -->
   </header>
 
   <!---cards-->
-  <section class="py-5">
+  <section style="background-color: black;" class=" py-4">
     <div class="container">
+      <div class="row text-center mb-3">
+        <div style="color: #fafafa;" class="col-md-12">
+          <h1>Best spots in London</h1>
+        </div>
+      </div>
       <div class="row">
         <div class="col">
           <div class="card-columns">
@@ -65,11 +74,11 @@
               <img src="assets/images/op_working_space.jpg" alt="working space"
                 class="first_meetup img-fluid card-img-top" />
               <div class="card-body">
-                <h4 class="card-title">Working remotely in London</h4>
+                <h4 class="card-title">Working remotely</h4>
 
                 <hr />
                 <button type="button" class="btn" style="background-color: lightslategrey;">
-                  <a style="color: #fafafa;" href="whereto.html">read more</a>
+                  <a style="color: #fafafa; text-decoration: none;" href="whereto.html">check it out</a>
                 </button>
               </div>
             </div>
@@ -78,34 +87,22 @@
             <div class="card" style=" height: 25rem;">
               <img src="assets/images/op_steakhouses.jpg" alt="" class="second_meetup img-fluid card-img-top" />
               <div class="card-body">
-                <h4 class="card-title">Steakhouses in London</h4>
+                <h4 class="card-title">Steakhouses</h4>
                 <hr />
                 <button type="button" class="btn" style="background-color: lightslategrey;;">
-                  <a style="color: #fafafa;" href="whereto_steakhouses.html">read more</a>
+                  <a style="color: #fafafa; text-decoration: none;" href="whereto_steakhouses.html">check it out</a>
                 </button>
               </div>
             </div>
-
-            <!-- <div class="camdenCard card p-3 text-white">
-              <blockquote class="card-blockquote card-body">
-                <p>
-                  12am @Camden Bridge
-                </p>
-                <footer class="blockquote-footer text-white">
-                  <small class="text-white">Organized by Magan Lee Adams
-                    <cite title="Source Title">from East London</cite></small>
-                </footer>
-              </blockquote>
-            </div> -->
 
             <!-- card three-->
             <div class="card" style=" height: 25rem;">
               <img src="assets/images/rooftop_bar_london2.jpg" alt="" class="third_meetup img-fluid card-img-top" />
               <div class="card-body">
-                <h4 class="card-title">Rooftop Bars in London</h4>
+                <h4 class="card-title">Rooftop Bars</h4>
                 <hr />
                 <button type="button" class="btn" style="background-color: lightslategrey;;">
-                  <a style="color: #fafafa;" href="#">read more</a>
+                  <a style="color: #fafafa; text-decoration: none;" href="#">check it out</a>
                 </button>
               </div>
             </div>
@@ -115,25 +112,56 @@
     </div>
   </section>
 
-
+  <!------------------------ABOUT SECTION-------------------------->
+  <section id="about" class="py-3" style="background-color: black;">
+    <div class="container">
+      <div class="row text-center">
+        <div style="color: #fafafa;" class="col-md-12">
+          <h1>About us</h1>
+        </div>
+      </div>
+      <div class="row mt-3 mb-3 text-center" style="color: #fafafa;">
+        <div class="col-md-12">
+          <p class="lead">Truffle Hunter is a creative content production company. Born to make the best work brilliantly, we combine craft, insight and technology to bring creative work to life for many brands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--newsletter-->
-  <section id="newsletter" class="text-center mt-3 p-5 bg-dark text-white">
+  <section id="newsletter" class="text-center p-5 bg-dark text-white">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Join the Truffle Hunter</h1>
+          <h1>Join to the newsletter</h1>
           <p>
             Stay up to date on all the latest info coming out of Truffle Hunter.
           </p>
-          <form
-          id="my_form"
-          action="https://formdump.codeinstitute.net" method="post" target="_blank"
-            class="form-inline justify-content-center was-validated">
-            <input name="name" type="text" class="form-control mb-2 mr-2" placeholder="Full Name" required />
-            <input type="email" name="email" class="form-control mb-2 mr-2" placeholder="Email" required />
-            <button type="submit" class="btn btn-success mb-2">SUBMIT</button>
+          <form id="my_form2" class="was-validated">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input id="fullName" name="from_name" type="text" class="form-control" placeholder="* Full Name"
+                    required />
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="email" name="from_email" id="email" class="form-control" placeholder="* Email"
+                    required />
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input id="submitBtn" type="submit" value="SUBMIT" class="btn btn-success btn-block" />
+                </div>
+              </div>
+
+            </div>
           </form>
+          <span class="d-block text-center mb-2 text-uppercase" id="messageUser"></span>
           <p>Your email address will not be published.</p>
         </div>
       </div>
@@ -173,14 +201,6 @@
     // Get the current year for the copyright
     $("#year").text(new Date().getFullYear());
 
-    // Reset form after submit
-    const form = document.getElementById('my_form');
-    form.addEventListener('submit', function resetHandler(event){
-      event.preventDefault();
-      form.submit();
-      form.reset();
-    });
-
     //init animated hamburger menu
     document.querySelector('.second-button').addEventListener('click', function () {
 
@@ -188,6 +208,8 @@
     });
 
   </script>
+  <script src="js/main.js"></script>
+  <script src="js/newsletter.js"></script>
 </body>
 
 </html>
