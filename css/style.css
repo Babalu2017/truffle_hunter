@@ -19,6 +19,11 @@ html {
 scroll-behavior: smooth;
 }
 
+.navbar
+        {
+            border-bottom: 2px solid #fafafa;
+        }
+
 body {
   padding-top: 50px;
   /* background-color: var(--gray-dark); */
