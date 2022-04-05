@@ -105,5 +105,14 @@ function initMap() {
 
 }
 
+// custom label imput field upload file
+// ref code: 
+//https://stackoverflow.com/questions/37713126/bootstrap-show-file-name-after-select
+$('input[type="file"]').change(function(e) {
+    var fileName = e.target.files[0].name;
+    // change name of actual input that was uploaded
+    $(e.target).next().html(fileName);
+  });
+
 
 
