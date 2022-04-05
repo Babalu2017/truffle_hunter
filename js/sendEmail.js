@@ -5,20 +5,20 @@ const form = document.getElementById('my_form');
     event.preventDefault();
 
 
-    const firstName = document.getElementById('name').value;
-    const surname = document.getElementById('surname').value;
+    const fullName = document.getElementById('fullName').value;
+    const fileCv = document.getElementById('inputGroupFile01').value;
     const number = document.getElementById('telphone_number').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
     
 
     //Sending the email with the name and email
-    emailjs.send("service_lhay6fq", "Francesco", {
-        "from_name": firstName,
-        "from_surname": surname,
+    emailjs.sendForm("service_lhay6fq", "Francesco", '#my_form', 'b166ofxC1GD8wWnmt', {
+        "from_name": fullName,
         "from_email": email,
         "from_number": number,
-        "from_message": message
+        "from_message": message,
+        "from_fileCv": fileCv
 
     })
         .then(
@@ -41,7 +41,7 @@ const form = document.getElementById('my_form');
             }
 
         );
-    
+        
     form.reset();
 
 })
