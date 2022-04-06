@@ -6,8 +6,6 @@ const form = document.getElementById('my_form');
 
 
     const fullName = document.getElementById('fullName').value;
-    const fileCv = document.getElementById('inputGroupFile01').value;
-    const number = document.getElementById('telphone_number').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
     
@@ -16,14 +14,12 @@ const form = document.getElementById('my_form');
     emailjs.sendForm("service_lhay6fq", "Francesco", '#my_form', 'b166ofxC1GD8wWnmt', {
         "from_name": fullName,
         "from_email": email,
-        "from_number": number,
         "from_message": message,
-        "from_fileCv": fileCv
 
     })
         .then(
             function (response) {
-                const statusMsg = "Awesome! We got your message!"
+                const statusMsg = "Thank you! We'll update our map."
                 console.log("SUCCESS", response.status);
                 const msgUser = document.getElementById('messageUser');
                 msgUser.textContent = statusMsg;

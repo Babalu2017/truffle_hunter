@@ -11,6 +11,12 @@
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
   <title>truffle hunter</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("b166ofxC1GD8wWnmt");
+    })();
+  </script>
 </head>
 
 <body>
@@ -362,18 +368,19 @@
               <h3>Please let us know we will update our map!</h3>
               <p>Required fields are marked *</p>
               <hr style="border: 1px solid gray;" />
-              <form id="my_form" class="was-validated" action="https://formdump.codeinstitute.net" target="_blank"
-                method="post">
+              <form 
+              id="my_form" 
+              class="was-validated">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" name="full_name" class="form-control" placeholder="* Full Name" required />
+                      <input id="fullName" type="text" name="from_name" class="form-control" placeholder="* Full Name" required />
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control" placeholder="* Email" required />
+                      <input id="email" type="email" name="from_email" class="form-control" placeholder="* Email" required />
                     </div>
                   </div>
                 </div>
@@ -381,7 +388,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="* Message" required></textarea>
+                      <textarea id="message" class="form-control" name="from_message" placeholder="* Message" required></textarea>
                     </div>
                   </div>
                   <div class="col-md-12">
@@ -391,6 +398,7 @@
                   </div>
                 </div>
               </form>
+              <span class="d-block text-center mb-2 text-uppercase" id="messageUser"></span>
               <p>Your email address will not be published.</p>
             </div>
           </div>
@@ -427,21 +435,10 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
     async></script>
-  <script src="js/main.js"></script>
-
   <script src="js/workRemote.js"></script>
   <script>
     // Get the current year for the copyright
     $("#year").text(new Date().getFullYear());
-
-    //reset form
-    const form = document.getElementById('my_form');
-
-    form.addEventListener('submit', function resetHandler(event) {
-      event.preventDefault();
-      form.submit();
-      form.reset();
-    });
 
 
     //init animated hamburger menu
@@ -451,6 +448,8 @@
     });
 
   </script>
+  <script src="js/main.js"></script>
+  <script src="js/suggestSpot.js"></script>
 </body>
 
 </html>
