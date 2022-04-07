@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>truffle hunter</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("b166ofxC1GD8wWnmt");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: black;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-light">Truffle Hunter</a>
+            <button class="navbar-toggler second-button " type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent10" aria-controls="navbarToggleExternalContent10"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span style="display:block"
+                    class="animated-icon2"><span></span><span></span><span></span><span></span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent10">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link text-light">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-light">Work with us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header>
+        <div class="container">
+            <div id="map"></div>
+        </div>
+    </header>
+
+    <!--INFO SECTION-->
+    <section class="py-3">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h3 class="text-center">Best Rooftops in London.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p>
+                        Picture the scene: it’s just you, your closest mates, a round of ice-cold drinks and some of the
+                        best views in the biz. A pretty sweet set-up all round; but where exactly can these top alfresco
+                        spots be found? Our guide to the best rooftop bars in London reveals all, whether that's for
+                        lounging back when there's not a cloud in the sky or socially-distanced cocktails under the
+                        stars at one of the city's most legendary rooftop hangouts.
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-top my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_main_rooftop_photo.jpg" alt="rooftop bar view" class="rounded img-fluid" />
+                </div>
+            </div>
+
+            <div id="theJones" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">The Rooftop at one hundred Shoreditch</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Swish rooftops in Shoreditch? Head to One Hundred for stunning views of the city and a pretty venue. Boasting pink marble tables, botanical decor and a private garden,it's a very Instagrammable spot for nights out with the girls.
+                    </p>
+                    <p><strong>What's it like? </strong>The Rooftop at One Hundred Shoreditch is your destination
+                    rooftop bar with incredible views and great food and drink and live music.
+                    The Rooftop is alive and colourful with pink marble tables and plenty of foliage to create a
+                    private garden oasis in the heart of Shoreditch. Come here any time of day to escape the hustle
+                    and bustle of East London, take in panoramic views and enjoy a glass of wine or a cocktail with
+                    friends.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_one_hundred_shoreditch.jpg" alt="one hundred shoreditch"
+                        class="rounded img-fluid" />
+                </div>
+            </div>
+
+            <div id="smith&wollensky" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Lock Tavern</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Head over to Chalk Farm where this fun and friendly pub fronts a rooftop beer garden, ideal for the summer months. Nab your space and get stuck into their selection of craft beers and big plates of comfort grub.</p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_lock_tavern.jpg" alt="lock taver"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="temper" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Madison</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>If it's stunning views of St Paul's, a tasty tapas menu and creative cocktail card that you're after, Madison is an absolute must. Whilst the terrace here isn't the most spacious in the capital, it's head and shoulders above the rest when it comes to the views on offer. Come by when the sun is setting for a cocktail or bite to eat and see for yourself.</p>
+                    <p><strong>What's it like? </strong>Arrive at the Penthouse of One New Change and step out on to the award-winning rooftop terrace for breath-taking views of the London skyline, a buzzing vibe and killer cocktails. 
+
+                        Madison boasts a real Manhattan style restaurant open from midday until late. The menu features superb grills from the wood fired Josper oven, delicious salads, burgers and a comforting selection of slow cooked classics.  Its renowned for its buzzing atmosphere and spectacular views, making it the ideal spot to catch up with friends and colleagues.The Bar at Madison is a destination in its own right with spectacular city views, a wide range of cocktails and delicious bar snacks.
+                        
+                        With several rooftop terraces offering supreme views across the City of London skyline, the space can be enjoyed year round with our umbrellas and heaters. Enjoy good food, drinks and music from our in-house DJs and live acoustic trios.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_madison.jpg" alt="madison"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+
+            <div id="blacklock" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Flight Club Victoria<h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Flight Club landed in Victoria to applause thanks to more oches and creative darts games than ever before as well as a shiny new outdoor Magic Garden. Decked out in festoon lighting and kitsch bits, it's the perfect spot for a rooftop bev once you're done slaying each other on the board..</p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_flight_club.jpg" alt="flight club victoria"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="hawksmoor" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Aqua Nueva</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>For seriously sky-high views of London, head up to Aqua Nueva's gorgeous rooftop terrace. Whether you fancy soaking up the vistas with a cocktail at hand or fancy tucking into a delicious Spanish feast, you couldn't have a better backdrop on Regent Street.</p>
+                    <p><strong>What's it like? </strong></p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_aqua_nueva.jpg" alt="aqua nueva"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="heliot" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">The Windmill Mayfair</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Okay so it's more a rooftop terrace than a rooftop bar, but we still felt The Windmill was worthy of a slot on the list. You'll find this hidden oasis of calm above the cosy vibes of the pub downstairs, where mouth-watering pies and an exceptional selection of cask ales are on offer.</p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_windmill_mayfair.jpg" alt="windmill mayfair"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="goodman" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Vagabond Northcote Road</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>When it comes to rooftop bars, there's few more cosy than Vagabond on Northcote Road. Not only is there a mouthwatering menu of tapas-style dishes, but there's also a huge wine list, as well as super cute lighting and intimate seating areas.</p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_vagabond.jpg" alt="vagabond"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="lerelais" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Aviary</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>For sleek interiors, a spacious roof terrace, incredible cocktails and brilliant views, look no further than Aviary in Finsbury Square. Located on the tenth floor of the Montcalm hotel, the venue has been carefully designed to take in as much of the city as possible; there's also an inside seating area where you can tuck into some delicious seasonal fare.
+                    </p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_aviary.jpg"
+                        alt="aviary" class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="stk" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">TT Liquor</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Take your cocktail drinking up a level by heading over to TT Liquor. This scenic spot offers panoramic views of the city, making it a pretty plot to enjoy alfresco imbibing in the summertime. Plus, they host all kinds of exciting events, from masterclasses to tasting experiences.                        <p>
+                    <p><strong>What's it like? </strong>Welcome to TT Liquor, a multi-faceted establishment for all things related to cocktails, spirits, and high-quality alcoholic beverages. They offer an extensive range of experiences – from cocktail making classes and tasting experiences to Pop up and Private Dining and even a Private 52 Seated Cinema.
+
+                        Their Shoreditch home also boasts an intimate cellar cocktail bar, roof terrace that over looks the city and a specialist liquor store selling our handpicked selection of fine liquors, beverages and specialist equipment. Each month they also collaborate with up-and-coming chefs to take over our kitchen and provide guests with immersive dining experiences and carefully designed cocktail pairings.
+                        
+                        All their experiences can be hosted at TT Liquor on Kingsland Road or at an external venue of your choice. They can cater for groups of almost any size and events of any type.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_tt_liquor.jpg" alt="tt liquor"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="bull" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">The Castle</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>If the sun's out and you live in Angel, you'll want to hot-foot it round to The Castle while the best seats on their roof terrace are still available. Found at the top of Pentonville Road, this is one of the finest outdoor drinking spots in all of North London, where guests top up their tans while nursing real ales and great wines.</p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_castle.jpg" alt="the castle"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="guinea" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">London Bridge Rooftop</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Looking for the very best rooftop bars in Central London? This is up there with the finest. Head over to London Bridge Rooftop to enjoy everything from after work drinks and gourmet burgers to bottomless brunches with handcrafted cocktails and banging disco tunes, all with amazing views of the City.
+
+                    </p>
+                    <p><strong>What's it like? </strong></p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_london_bridge.jpg" alt="london bridge rooftop bar"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="omnino" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">No 32 The Old Town</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Located just a short stroll away from Clapham Common, No 32 The Old Town is an uber-chic brunch spot and late-night bar. Boasting a fairy-light adorned terrace with heaters and cosy blankets, it's the perfect place to unwind with a glass of wine in hand.</p>
+                    <p><strong>What's it like? </strong>
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_no_32.jpg" alt="no 32"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="flat" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Sky Garden Bars</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>One of the most iconic rooftop bars in London, Sky Garden has plenty of different spaces you can settle down in. From sky pods and terraces to areas with views of the Gherkin, there's something to cater for every group.</p>
+                    <p><strong>The menu</strong>This is the place to go for affordable priced, rich tasting steak.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_sky_garden.jpg" alt="sky garden"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="boisdale" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Upper 5th Shoreditch</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Tucked away on top of the Courthouse Hotel, this beautiful rooftop bar boasts much more than a few fruity cocktails. Seasonal and fresh, the Upper 5th drinks selection keeps it simple, perfect for pairing with panoramic views over Shoreditch and some delicious grill plates.
+                    </p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_upper_5th.jpg" alt="upper 5th"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="popeseye" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">The Gate</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Whether you're looking for chilled lunchtime hangouts or sultry date night vibes, The Gate is sure to cater to all of your needs. One of the best rooftop bars in London, this place offers its guests organic dishes, handcrafted sips and live music nights with amazing views of the city.
+                    <p>
+                    <p><strong>What's it like? </strong>The Lounge at The Gate is a new lounge bar and terrace just steps from Liverpool street station, Spitalfields and Brick Lane.
+
+                        Located on the fifth floor of an iconic 21 storey Flatiron-style luxury aparthotel with stunning views of the city, and designed as a private area available exclusively to hotel guests, The Lounge extends The Gate’s boutique atmosphere by opening its doors to the public for the first time this spring.
+                        
+                        Curated by British contemporary and street art brand Maddox Gallery, its slick city design combined with eclectic East London ambiance and Mid-Century inspired furnishings create a welcoming and luxurious urban experience to enjoy at any time of day.
+                        
+                        Offering seasonal and nutritious grab-and-go dishes, organic teas, and barista coffees throughout the day, The Lounge transforms in the evening. A carefully selected list of local and international beers and wines that include gluten-free, vegan and organic options and the delicate ambiance music make the Lounge an ideal spot for after-work drinks. 
+                        
+                        The Northwest-facing fifth-floor terrace with stunning views of the City and beyond will host seasonal experiences like barbecues and wine tastings or wellbeing classes throughout the summer. 
+                        
+                        Both the indoor lounge bar and the rooftop terrace are available for private hire, and the flexible space can be adapted to suit corporate events, team building, birthdays, wedding receptions, cocktail night, and much more.</p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_the_gate.jpg" alt="the gate"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="mrestaurant" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Golden Bee</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>One of the best rooftop bars in London, The Golden Bee is a great spot for nights out with the girls or a first date. Along with a bustling indoor club, its top floor features DJs playing house music as well as fabulous cocktails to tip back.
+                    <p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_golden_bee.jpg" alt="golden bee"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="lurra" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">601 Queen's Road</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>Formerly The Terrace, this gorgeous rooftop number offers views over Wimbledon alongside delicious cocktails and tasty food for any occasion. And when you're not getting your sip on al fresco, you can be dancing it up in their spacious interiors to some of the best DJs in West London.
+                    <p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_601_queens_road.jpg" alt="601 queen's road"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div id="cut" class="row method_c">
+                <div class="col-md-6 text-md-left text-sm-center">
+                    <h4 class="text-center">Bussey Rooftop Bar </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center mt-2 mb-3 order-2 order-md-1">
+                    <p><strong>Why go? </strong>A stunning rooftop bar in Peckham, Bussey is a top-notch shout if you're looking for watering holes. Along with pops of greenery and tropical vibes, you can chow down on delish pizza slices while sipping on gorgeous cocktails.
+                    <p>
+                    <p><strong>What's it like? </strong> </p>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-4 order-1 order-md-2">
+                    <img src="assets/images/op_web_rooftop_bars/op_bussey.jpg" alt="bussey"
+                        class="rounded img-fluid border border-secondary" />
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 mt-3">
+                <a href="#" class="btn btn-outline-dark">go to the top >></a>
+                <a href="index.html" class="btn btn-outline-dark" style="float:right">go to home >></a>
+            </div>
+
+
+    </section>
+
+    <!--want collaborate-->
+    <section class="text-center p-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="card text-muted bg-light mb-3">
+                        <div class="card-body px-1">
+                            <h3 class="text-center text-muted">
+                                Do you know new spots in town?
+                            </h3>
+                            <h3>Please let us know we will update our map!</h3>
+                            <p>Required fields are marked *</p>
+                            <hr style="border: 1px solid gray;" />
+                            <form id="my_form" class="was-validated" action="https://formdump.codeinstitute.net"
+                                target="_blank" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="fullName" type="text" name="from_name" class="form-control"
+                                                placeholder="* Full Name" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="email" type="email" name="from_email" class="form-control"
+                                                placeholder="* Email" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea id="message" class="form-control" name="from_message"
+                                                placeholder="* Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="submit" value="SUBMIT"
+                                                class="btn btn-outline-success btn-block" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <span class="d-block text-center mb-2 text-uppercase" id="messageUser"></span>
+                            <p>Your email address will not be published.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="main-footer" class="text-center p-4" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p style="color: white;">Copyright &copy; <span id="year"></span> Truffle Hunter</p>
+                    <a style="color: #fafafa;" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: #fafafa;" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
+                            class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
+        async></script>
+    <script src="js/mapRooftops.js"></script>
+    <script>
+        // Get the current year for the copyright
+        $("#year").text(new Date().getFullYear());
+
+
+        //init animated hamburger menu
+        document.querySelector('.second-button').addEventListener('click', function () {
+
+            document.querySelector('.animated-icon2').classList.toggle('open');
+        });
+
+    </script>
+    <script src="js/suggestSpot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
