@@ -86,7 +86,8 @@
       <div class="row mt-2 mb-3 text-center" style="color: #fafafa;">
         <div class="col-md-12">
           <p>
-            Independently conceptualize, shoot and edit original content with a particular focus on social, but also for use on ecomm, web, and email.
+            Independently conceptualize, shoot and edit original content with a particular focus on social, but also for
+            use on ecomm, web, and email.
           </p>
           <p>
             Bring fresh ideas and experiment with the products to create mouth-watering digital content.
@@ -94,13 +95,15 @@
           <p>
             Undertake simple retouching and colour correction of your assets.
           </p>
-          <p> Utilise your knowledge of social platforms and shooting in-platform to create platform-first, socially relevant content.</p>
-          <p>Create assets for social content such as stories, feed posts, sizzle reels and all social-first video formats</p>
+          <p> Utilise your knowledge of social platforms and shooting in-platform to create platform-first, socially
+            relevant content.</p>
+          <p>Create assets for social content such as stories, feed posts, sizzle reels and all social-first video
+            formats</p>
           <p>Work independently to style, shoot, and edit appetite-appealing digital content from home.</p>
           <p>Collaborate with chefs, influencers and other content creators, curators and crafters</p>
           <p>Create graphical assets for social media posts
           </p>
-          <p>Quality check final output and source files.</p>          
+          <p>Quality check final output and source files.</p>
         </div>
       </div>
 
@@ -112,15 +115,18 @@
       <div class="row mt-2 mb-3 text-center" style="color: #fafafa;">
         <div class="col-md-12">
           <p>
-            Social-native perspective, thinking about the purpose of content and how to create engaging and performing assets.
+            Social-native perspective, thinking about the purpose of content and how to create engaging and performing
+            assets.
           </p>
           <p>
             Experience running both your own person and other brands social media accounts (ideally food related).
           </p>
           <p>
-            Knowledge of social platforms, capabilities and best practices inclusive of TikTok, Instagram, Facebook, YouTube, Snapchat, Twitter, LinkedIn and Twitch.
+            Knowledge of social platforms, capabilities and best practices inclusive of TikTok, Instagram, Facebook,
+            YouTube, Snapchat, Twitter, LinkedIn and Twitch.
           </p>
-          <p> Passion for social and cultural trends and keeping up-to-date with the latest ad-formats, best practice and technologies.</p>         
+          <p> Passion for social and cultural trends and keeping up-to-date with the latest ad-formats, best practice
+            and technologies.</p>
         </div>
       </div>
 
@@ -169,7 +175,7 @@
                       <input type="file" name="my_file" class="form-control custom-file-input" id="inputGroupFile01"
                         required>
                       <label class="custom-file-label" for="inputGroupFile01">* Upload CV</label>
-                      
+
                     </div>
                   </div>
 
@@ -239,24 +245,18 @@
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   </script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
-    async></script>
-  <script src="js/main.js"></script>
-
-  <script src="js/workRemote.js"></script>
   <script>
+    // custom label imput field upload file
+    // ref code: 
+    //https://stackoverflow.com/questions/37713126/bootstrap-show-file-name-after-select
+    $('input[type="file"]').change(function (e) {
+      var fileName = e.target.files[0].name;
+      // change name of actual input that was uploaded
+      $(e.target).next().html(fileName);
+    });
 
     // Get the current year for the copyright
     $("#year").text(new Date().getFullYear());
-
-    // Reset form after submit
-    // const form = document.getElementById('my_form');
-    // form.addEventListener('submit', function resetHandler(event) {
-    //   event.preventDefault();
-    //   form.submit();
-    //   form.reset();
-    // });
 
     //init animated hamburger menu
     document.querySelector('.second-button').addEventListener('click', function () {
