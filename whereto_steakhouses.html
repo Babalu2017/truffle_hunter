@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/mapSteak.js"></script>
     <title>truffle hunter</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -538,7 +539,7 @@
                                                 placeholder="* Full Name" required />
                                         </div>
                                     </div>
-    
+
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <input id="email" type="email" name="from_email" class="form-control"
@@ -546,7 +547,7 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
@@ -556,7 +557,8 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="submit" value="SUBMIT" class="btn btn-outline-success btn-block" />
+                                            <input type="submit" value="SUBMIT"
+                                                class="btn btn-outline-success btn-block" />
                                         </div>
                                     </div>
                                 </div>
@@ -566,7 +568,7 @@
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
@@ -586,6 +588,14 @@
                 </div>
             </div>
         </div>
+
+        <a class="top-link hide" href="#" id="js-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+                <path d="M12 6H0l6-6z" />
+            </svg>
+            <span class="screen-reader-text">Back to top</span>
+        </a>
+
     </footer>
 
 
@@ -598,7 +608,6 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYJTR7Z_zrhloEYaskm4e3KnyD76wMw0&callback=initMap&libraries=&v=weekly"
         async></script>
-    <script src="js/mapSteak.js"></script>
     <script>
         // Get the current year for the copyright
         $("#year").text(new Date().getFullYear());

@@ -131,11 +131,13 @@ function initMap() {
     // });
     
     // addMarker function
-    function addMarker(props) {
-        var marker = new google.maps.Marker({
-            position: props.coords,
-            map: map,
-        });
+        function addMarker(props) {
+            var marker = new google.maps.Marker({
+                position: props.coords,
+                map: map,
+            });
+    
+    
 
        // Add Content to the marker
         var infoWindow = new google.maps.InfoWindow({
@@ -150,3 +152,48 @@ function initMap() {
 
 
 }
+
+
+// stiky top buttom
+
+window.onload = function () {
+
+    const scrollToTopButton = document.getElementById('js-top');
+  
+    const scrollFunc = () => {
+  
+      let y = window.scrollY;
+  
+      if (y > 0) {
+        scrollToTopButton.className = "top-link show";
+      } else {
+        scrollToTopButton.className = "top-link hide";
+      }
+    };
+  
+    window.addEventListener("scroll", scrollFunc);
+  
+    const scrollToTop = () => {
+  
+      const c = document.documentElement.scrollTop || document.body.scrollTop;
+  
+      if (c > 0) {
+        // window.requestAnimationFrame(scrollToTop);
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
+    };
+  
+    window.onload = function () {
+      scrollToTopButton.onclick = function (event) {
+        event.preventDefault();
+        scrollToTop();
+      }
+    }
+  
+  
+  }
+  
