@@ -1,3 +1,6 @@
+
+
+
 const form = document.getElementById('my_form');
 
     form.addEventListener('submit', function (event) {
@@ -23,7 +26,7 @@ const form = document.getElementById('my_form');
     })
         .then(
             function (response) {
-                const statusMsg = "Awesome! We got your message!"
+                const statusMsg = "Thank you! We received your CV."
                 console.log("SUCCESS", response.status);
                 const msgUser = document.getElementById('messageUser');
                 msgUser.textContent = statusMsg;
@@ -41,7 +44,8 @@ const form = document.getElementById('my_form');
             }
 
         );
-        
+
     form.reset();
 
 })
+
