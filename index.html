@@ -25,18 +25,18 @@
   <nav class="navbar fixed-top navbar-expand-lg" style="background-color: black;">
     <div class="container">
       <a href="index.html" class="navbar-brand text-light">Truffle Hunter</a>
-      <button class="navbar-toggler second-button " type="button" data-toggle="collapse"
+      <button id="hamburger-menu" class="navbar-toggler second-button " type="button" data-toggle="collapse"
         data-target="#navbarToggleExternalContent10" aria-controls="navbarToggleExternalContent10" aria-expanded="false"
         aria-label="Toggle navigation">
         <span style="display:block" class="animated-icon2"><span></span><span></span><span></span><span></span></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggleExternalContent10">
-        <ul class="navbar-nav ml-auto">
+        <ul class="menu navbar-nav ml-auto">
           <li class="nav-item">
             <a href="index.html" class="nav-link text-light">Home</a>
           </li>
           <li class="nav-item active">
-            <a href="#about" class="nav-link text-light">About Us</a>
+            <a href="#about" class="nav-link text-light ab_us">About Us</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link text-light">Work with us</a>
@@ -125,7 +125,7 @@
   <!------------------------ABOUT SECTION-------------------------->
   <section id="about" class="py-3" style="background-color: black;">
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center method_c">
         <div style="color: #fafafa;" class="col-md-12">
           <h1>About us</h1>
         </div>
@@ -190,11 +190,11 @@
       <div class="row">
         <div class="col">
           <p style="color: white;">Copyright &copy; <span id="year"></span> Truffle Hunter</p>
-          <a style="color: #fafafa;" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
+          <a style="color: #fafafa;" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
               class="fab fa-twitter"></i></a>
-          <a href="#" style="color: #fafafa;" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
+          <a href="https://www.instagram.com" style="color: #fafafa;" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.pinterest.co.uk" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
               class="fab fa-pinterest"></i></a>
         </div>
       </div>
@@ -215,9 +215,14 @@
 
     //init animated hamburger menu
     document.querySelector('.second-button').addEventListener('click', function () {
-
       document.querySelector('.animated-icon2').classList.toggle('open');
     });
+
+    // close hamburger btn at every click without reload page
+    $('.menu li a').on("click", function () {
+        $('#hamburger-menu').click();
+      });
+
 
   </script>
   <script src="js/main.js"></script>
