@@ -36,7 +36,7 @@
             <a href="index.html" class="nav-link text-light">Home</a>
           </li>
           <li class="nav-item active">
-            <a href="#about" class="nav-link text-light ab_us">About Us</a>
+            <a id="about_us_link" href="#about" class="nav-link text-light">About Us</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link text-light">Work with us</a>
@@ -219,9 +219,11 @@
     });
 
     // close hamburger btn at every click without reload page
-    $('.menu li a').on("click", function () {
-        $('#hamburger-menu').click();
-      });
+    let aboutBtn = document.getElementById('about_us_link');
+    aboutBtn.addEventListener('click', function () {
+      document.getElementById('hamburger-menu').click();
+    });
+
 
 
   </script>
