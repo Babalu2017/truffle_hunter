@@ -139,8 +139,7 @@
         <div class="col-md-4">
           <div class="card p-4">
             <div class="card-body">
-              <h4>Location</h4>
-              <h4>Address</h4>
+              <h4>Head Office</h4>
               <p>33 Depford High Street, SE5 5BG, London</p>
               <h4>Phone</h4>
               <p>+44 (0) 78-57355545</p>
@@ -245,6 +244,7 @@
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   </script>
+  <script src="js/sendEmail.js"></script>
   <script>
     // custom label imput field upload file
     // ref code: 
@@ -253,6 +253,11 @@
       var fileName = e.target.files[0].name;
       // change name of actual input that was uploaded
       $(e.target).next().html(fileName);
+    });
+
+    // reset the input file fild empty after submit 
+    document.getElementById('submitBtn').addEventListener('click', function() {
+      document.getElementById('inputGroupFile01').innerHTML = "";
     });
 
     // Get the current year for the copyright
@@ -266,7 +271,7 @@
 
   </script>
   <script src="js/main.js"></script>
-  <script src="js/sendEmail.js"></script>
+  <!-- <script src="js/sendEmail.js"></script> -->
 </body>
 
 </html>
