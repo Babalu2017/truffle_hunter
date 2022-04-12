@@ -208,6 +208,14 @@ body.is-os #page-header {
   width: 0%;
   left: 50%;
   }
+
+  /* remove border bhamburger menu */
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
 /* xxxxxxxxxxxxx END  all pages   xxxxxxxxxxxxxxxx*/  
 
 /* xxxxxxxxxxxxx   index  xxxxxxxxxxxxxxxx*/ 
