@@ -3,9 +3,11 @@
 
 const form = document.getElementById('my_form');
 
+
     form.addEventListener('submit', function (event) {
     //prevent the reload of the page. here i prevent the event.
     event.preventDefault();
+    
 
 
     const fullName = document.getElementById('fullName').value;
@@ -45,7 +47,7 @@ const form = document.getElementById('my_form');
 
         );
 
-    form.reset();
+
 
 })
 

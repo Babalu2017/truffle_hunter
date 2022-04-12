@@ -255,11 +255,6 @@
       $(e.target).next().html(fileName);
     });
 
-    // reset the input file fild empty after submit 
-    document.getElementById('submitBtn').addEventListener('click', function() {
-      document.getElementById('inputGroupFile01').innerHTML = "";
-    });
-
     // Get the current year for the copyright
     $("#year").text(new Date().getFullYear());
 
