@@ -4,7 +4,7 @@
 
 This website has the intent to help people to find the best spots in London where to work remotly or to spend their sparetime.
 
-<h2 align="center"><img src="assets/images/readme_truffle_img/how_it_looks_devices.jps"></h2>
+<h2 align="center"><img src="assets/images/readme_truffle_imgs/how_it_looks_devices.jpg"></h2>
 
 
 ## User Experience (UX)
