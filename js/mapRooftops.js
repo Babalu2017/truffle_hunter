@@ -1,43 +1,22 @@
 function initMap() {
 
-    // Map Options
+    /* Map Options */
     var options = {
         zoom: 10,
         center: {lat:51.509865,lng:-0.118092},
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         mapTypeControl: true,
         fullscreenControl: false
-    }
+    };
 
 
-    // xxxxxx New Map
-    //Remote Work
+    /* New Map */
+    /* Remote Work */
      var map = new google.maps.Map(document.getElementById('map'), options);
 
-     
 
     
-    /*
-    // Add Markers
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-    var marker = new google.maps.Marker({
-        position: {lat:51.52582,lng:-0.13385},
-        map: map,
-        // icon: iconBase + 'library_maps.png'
-    });
-
-    // Add Content to the marker
-    var infoWindow = new google.maps.InfoWindow({
-        content: `<h6>The Wellcome Collection</h6>`,
-    });
-
-    marker.addListener('click', function() {
-        infoWindow.open(map, marker);
-    });
-    */
-
-    // xxxxxxxxxxxxxxxxxx Remote Work
-    //Array of markers
+    /* Array of markers */
     var markers = [
         {
             coords: {lat:51.53070,lng:-0.07781},
@@ -92,7 +71,7 @@ function initMap() {
             coords: {lat:51.51403,lng:-0.08495},
             content: `<a href="#skygarden">sky garden bars</a>`
         },
-        ,{
+        {
             coords: {lat:51.52989,lng:-0.07953},
             content: `<a href="#upper5th">upper 5th shoreditch</a>`
         },
@@ -113,24 +92,14 @@ function initMap() {
             content: `<a href="#bussey">bussey</a>`
         }
 
-    ]
+    ];
     
-    // Loop through markers array
+    /* Loop through markers array */
     for(var i = 0; i < markers.length; i++) {
         addMarker(markers[i]);
     }
-
-    // Call addMarker
-    // addMarker({
-    //     coords: {lat:51.52582,lng:-0.13385},
-    //     content: `<h6>The Wellcome Collection</h6>`
-    // });
-    // addMarker({
-    //     coords: {lat:51.529972,lng:-0.127676},
-    //     content: `<h6>The British Library</h6>`
-    // });
     
-    // addMarker function
+    /* addMarker function */
     function addMarker(props) {
         var marker = new google.maps.Marker({
             position: props.coords,
@@ -146,13 +115,13 @@ function initMap() {
             infoWindow.open(map, marker);
         }); 
 
-    };
+    }
 
 
 }
 
 
-// stiky top buttom
+/* stiky top buttom*/
 
 window.onload = function () {
 
@@ -176,7 +145,6 @@ window.onload = function () {
       const c = document.documentElement.scrollTop || document.body.scrollTop;
   
       if (c > 0) {
-        // window.requestAnimationFrame(scrollToTop);
         window.scrollTo({
           top: 0,
           left: 0,
@@ -189,9 +157,9 @@ window.onload = function () {
       scrollToTopButton.onclick = function (event) {
         event.preventDefault();
         scrollToTop();
-      }
-    }
+      };
+    };
   
   
-  }
+  };
   
