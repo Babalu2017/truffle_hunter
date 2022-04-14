@@ -139,7 +139,17 @@ The W3C Markup Validator, W3C CSS Validator and JSHINT Validator Services were u
     - [Google Chrome](assets/images/readme_truffle_imgs/op_chrome_browser.jpg) 
     - [Microsoft Edge](assets/images/readme_truffle_imgs/op_edge_browser.jpg)
     - [Safari](assets/images/readme_truffle_imgs/op_safari_browser.jpg).
-2.   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone5, iPhone6, iPhone7, iPhone 8 & iPhoneX.
+2.   The website was viewed on a variety of devices such as: 
+    - [Laptop](assets/images/readme_truffle_imgs/devices_view/op_laptop.jpg) 
+    - [iPhoneXR](assets/images/readme_truffle_imgs/devices_view/op_iphone_xr.jpg) 
+    - [iPhone12](assets/images/readme_truffle_imgs/devices_view/op_iphone_12_pro.jpg)
+    - [Samsung_Galaxy_Fold](assets/images/readme_truffle_imgs/devices_view/op_galaxy_fold.jpg)
+    - [iPad_Air](assets/images/readme_truffle_imgs/devices_view/op_ipad_air.jpg)
+    - [iPad_Air_Mini](assets/images/readme_truffle_imgs/devices_view/op_ipad_mini.jpg)
+    - [Samsung_Galaxy_a51/71](assets/images/readme_truffle_imgs/devices_view/op_samsung_galaxy_a51_a71.jpg)
+    - [Samsung_Galaxy_s8+](assets/images/readme_truffle_imgs/devices_view/op_samsung_galaxy_s8+.jpg)
+    - [Nest_Hub](assets/images/readme_truffle_imgs/devices_view/op_tablet_nes_hub.jpg)
+    - [Nest_Hub_Max](assets/images/readme_truffle_imgs/devices_view/op_tablet_nest_hub_max.jpg)
 3.   A large amount of testing was done to ensure that all pages were linking correctly [view](img/manual_testing/manual_testing.jpg).
 4.   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
