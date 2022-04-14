@@ -89,13 +89,19 @@ This website has the intent to help people to find the best spots in London wher
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-1.  HTML Homepage validator [view](img/validator_screenshots/index_baba_cafe.png)
-2.  HTML work remotly page validator [view](img/validator_screenshots/coffees_baba_cafe.png)
-3.  HTML Best Rooftops page validator [view](img/validator_screenshots/coffees_baba_cafe.png)
-4.  HTML Best Steakhouses page validator [view](img/validator_screenshots/coffees_baba_cafe.png)
-5.  HTML Contact Us validator [view](img/validator_screenshots/contact_baba_cafe.png)
-6.  CSS  Style_Sheet validator [view](img/validator_screenshots/style_css_babacafe.png)
-7.  JS  validator [view](img/validator_screenshots/style_css_babacafe.png)
+1.  HTML Homepage validator [view](assets/images/validator/index_html.jpg)
+2.  HTML work remotly page validator [view](assets/images/validator/whereto_html.jpg)
+3.  HTML Best Rooftops page validator [view](assets/images/validator/rooftops_html.jpg)
+4.  HTML Best Steakhouses page validator [view](assets/images/validator/whereto_steakhouse_html.jpg)
+5.  HTML Contact Us validator [view](assets/images/validator/contact_html.jpg)
+6.  CSS  Style_Sheet validator [view](assets/images/validator/style_css.jpg)
+7.  JS  main [view](assets/images/validator/main_js.jpg)
+8.  JS  mapRooftops [view](assets/images/validator/rooftops_js.jpg)
+9.  JS  mapSteak [view](assets/images/validator/steakhouses_js.jpg)
+10.  JS  newsletter [view](assets/images/validator/newsletter_js.jpg)
+11.  JS  sendEmail [view](assets/images/validator/sendEmail_js.jpg)
+12.  JS  suggestSpot [view](assets/images/validator/suggestSpot_js.jpg)
+13.  JS  workRemote [view](assets/images/validator/workRemote_js.jpg)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -109,7 +115,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
         1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly. [view](assets/images/readme_truffle_imgs/op_navigation.jpg)
 
-        2. At the bottom of each blog pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page. [view](assets/images/ux_screenshoots/optimazed_back_to_blog.jpg)
+        2. At the bottom of each blog pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page. [view](assets/images/readme_truffle_imgs/op_buttons.jpg)
         
 
 
@@ -201,17 +207,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   Carousel keep going while modals are open. That’s give a bad user experience. I used [Bootstrap_Documentation](https://getbootstrap.com/docs/3.4/javascript/#carousel-pause)
-    -   Once I fixed the previous bug another one came out, Carousel stopped working. I used [Stackoverflow](https://stackoverflow.com/questions/26863003/how-to-reset-the-bootstrap-modal-when-it-gets-closed-and-open-it-fresh-again)
--   Videos and Carousel and SlideShow didn't work on Github pages. the issues were caused by http src inside the script.It was solved by adding the secure protocol. I used Stack Overflow again.
--   On small devices HOME page and DIY the navbar fixed top didn't work. I added html,body selector height:100% and margin:0 to css stylesheet. I used Stackoverflow again
+-   custom label input field upload file. I used [Stackoverflow](https://stackoverflow.com/questions/37713126/bootstrap-show-file-name-after-select)
 
 -   For the animation hamburger menu' I used [MDBootstrap](https://mdbootstrap.com/docs/standard/extended/hamburger-menu/)
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-
--   [Video Modal](https://stackoverflow.com/questions/54481655/display-video-in-modal/54481920): jQuery Modal Video Plugin.
-    -   YouTube Embedded Players and Player Parameters [YouTube IFrame Player API](https://developers.google.com/youtube/player_parameters?hl=en)
 
 -   the README.md file structure follow the [codeistitute](https://github.com/Code-Institute-Solutions/SampleREADME/blob/master/README.md) sample.
 
