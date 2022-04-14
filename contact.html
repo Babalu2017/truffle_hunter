@@ -52,22 +52,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 m-auto text-bottom">
-          <!-- <h2 class="truffle" style="color: rgba(255,255,255, 0.7); text-shadow: 4px 4px 5px black;">Truffle Hunter</h2> -->
-          <!-- <p class="lead" style="text-shadow: 4px 4px 5px black; letter-spacing: 1px;">
-            We will post our meetups around London monthly.
-          </p> -->
         </div>
       </div>
     </div>
   </header>
 
-  <!------------------------ABOUT SECTION-------------------------->
+  <!--ABOUT SECTION-->
   <section id="about" class="py-3" style="background-color: black;">
     <div class="container">
       <div class="row text-center">
         <div style="color: #fafafa;" class="col-md-12">
           <h1>Do you want to work with us? We need foodies!</h1>
-          <!-- <h3>Foodies we need you</h3> -->
         </div>
       </div>
       <div class="row mt-2 mb-5 text-center" style="color: #fafafa;">
@@ -130,7 +125,7 @@
             and technologies.</p>
         </div>
       </div>
-
+    </div>
   </section>
 
   <!-- contact us section -->
@@ -155,11 +150,6 @@
               </h3>
               <p class="text-center">Required fields are marked *</p>
               <hr />
-              <!-- <form 
-              id="my_form" 
-              class="was-validated" 
-              action="https://formdump.codeinstitute.net" target="_blank"
-                method="post"> -->
               <form id="my_form" class="was-validated">
                 <div class="row">
                   <div class="col-md-6">
@@ -227,12 +217,14 @@
       <div class="row">
         <div class="col">
           <p style="color: white;">Copyright &copy; <span id="year"></span> Truffle Hunter</p>
-          <a style="color: #fafafa;" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
-              class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com" style="color: #fafafa;" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.pinterest.co.uk" style="padding-left: 5px; padding-right: 5px; color: #fafafa;" target="_blank"><i
-              class="fab fa-pinterest"></i></a>
+          <a style="color: #fafafa;" href="https://www.facebook.com" target="_blank"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" style="padding-left: 5px; padding-right: 5px; color: #fafafa;"
+            target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com" style="color: #fafafa;" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.pinterest.co.uk" style="padding-left: 5px; padding-right: 5px; color: #fafafa;"
+            target="_blank"><i class="fab fa-pinterest"></i></a>
         </div>
       </div>
     </div>
@@ -244,22 +236,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-  </script>
   <script src="js/sendEmail.js"></script>
   <script>
-    // custom label imput field upload file
-    // ref code: 
-    //https://stackoverflow.com/questions/37713126/bootstrap-show-file-name-after-select
+    /* custom label input field upload file */
     $('input[type="file"]').change(function (e) {
       var fileName = e.target.files[0].name;
-      // change name of actual input that was uploaded
+      /* change name of actual input that was uploaded */
       $(e.target).next().html(fileName);
     });
 
-    // Get the current year for the copyright
+    /* Get the current year for the copyright */
     $("#year").text(new Date().getFullYear());
 
-    //init animated hamburger menu
+    /* init animated hamburger menu */
     document.querySelector('.second-button').addEventListener('click', function () {
 
       document.querySelector('.animated-icon2').classList.toggle('open');
@@ -267,7 +256,6 @@
 
   </script>
   <script src="js/main.js"></script>
-  <!-- <script src="js/sendEmail.js"></script> -->
 </body>
 
 </html>
