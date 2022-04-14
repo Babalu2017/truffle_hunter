@@ -87,7 +87,7 @@ This website has the intent to help people to find the best spots in London wher
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator, W3C CSS Validator and JSHINT Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 1.  HTML Homepage validator [view](assets/images/validator/index_html.jpg)
 2.  HTML work remotly page validator [view](assets/images/validator/whereto_html.jpg)
