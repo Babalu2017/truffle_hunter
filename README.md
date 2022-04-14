@@ -41,14 +41,7 @@ This website has the intent to help people to find the best spots in London wher
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](assets/png_wireframe/homeWireframe2.png)
-
-    -   Best Spots Pages Wireframe - [View](assets/png_wireframe/blog_meetups_wireframe.png)
-    
-    -   Contact Us Page Wireframe - [View](assets/png_wireframe/contact_wireframe.png)
-
-    -   Mobile and Tablet Wireframe - [View](assets/png_wireframe/smarthphone_tablet_wireframe.png)
-
+    -   Wireframe - [View](assets/images/wireframes/op_wireframes.jpg)
 
 ## Features
 
