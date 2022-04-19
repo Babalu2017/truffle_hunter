@@ -15,7 +15,7 @@ This website has the intent to help people to find the best spots in London wher
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site. [view](assets/images/readme_truffle_imgs/op_purpose_website.jpg)
 
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content. [view]assets/images/readme_truffle_imgs/op_navigation.jpg)
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content. [view](assets/images/readme_truffle_imgs/op_navigation.jpg)
 
 
     -   #### Returning Visitor Goals
