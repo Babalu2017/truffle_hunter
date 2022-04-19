@@ -73,7 +73,10 @@ This website has the intent to help people to find the best spots in London wher
     - xd was used to create the wireframes during the design process.
 1. [Adobe Photoshop:](https://www.adobe.com/uk/products/photoshop.html)
     - Photoshop was used to edit photos as well as to make them more web friendly (resizing_save for web legacy option).
-
+1. [Google Maps Api:](https://developers.google.com/maps)
+    - google map api was used on three pages whereto.html, whereto_steakhouse.html and rooftops.hmtl.In all pages the users can find a big map as header imgage where they can interact with and find the spot they're looking for.
+1. [Emailjs:](https://www.emailjs.com/)
+    - emailjs api was used to link all the forms with the website's owner. The user can sand test as well as upload file.If the inputs inside the forms are filled correctly the user will receive a message. I used a status 200 response to trigger that event. [view](assets/images/readme_truffle_imgs/emailjs/emailjs_screenshot.jpg)
 ## Testing
 
 The W3C Markup Validator, W3C CSS Validator and JSHINT Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
@@ -149,9 +152,11 @@ The W3C Markup Validator, W3C CSS Validator and JSHINT Validator Services were u
 3.   A large amount of testing was done to ensure that all pages were linking correctly [view](img/manual_testing/manual_testing.jpg).
 4.   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-### Known Bugs
+### Known Bugs/Errors
 
--   No bugs known so far. 
+-    [Permissions_Policy_Header](assets/images/readme_truffle_imgs/bugs_errors/permissions_policy_interest_cohort.jpg).
+-    [Github_Permissions_Policy_Use](assets/images/readme_truffle_imgs/bugs_errors/github_permissions_policy_interest_cohort.jpg)
+
 
 
 ## Deployment
