@@ -158,8 +158,9 @@ The W3C Markup Validator, W3C CSS Validator and JSHINT Validator Services were u
 
 ### Known Bugs/Errors
 
--   Stackoverflow: [Permissions_Policy_Header](assets/images/readme_truffle_imgs/bugs_errors/permissions_policy_interest_cohort.jpg).
--   GitHub: [Github_Permissions_Policy_Use](assets/images/readme_truffle_imgs/bugs_errors/github_permissions_policy_interest_cohort.jpg)
+-   Error on Github hosted pages : [view](assets/images/readme_truffle_imgs/bugs_errors/error_cohort.jpg).
+-   What Stackoverflow say: [view](assets/images/readme_truffle_imgs/bugs_errors/permissions_policy_interest_cohort.jpg).
+-   What GitHub say: [view](assets/images/readme_truffle_imgs/bugs_errors/github_permissions_policy_interest_cohort.jpg)
 
 
 
