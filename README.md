@@ -43,6 +43,10 @@ This website has the intent to help people to find the best spots in London wher
 
     -   Wireframe - [View](assets/images/wireframes/op_wireframes.jpg)
 
+*   ### Site Map
+
+    -   Site Map - [View](assets/images/readme_truffle_imgs/navigation_model/road_map.jpg)
+
 ## Features
 
 -   Responsive on all device sizes
@@ -211,7 +215,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   custom label input field upload file. I used [Stackoverflow](https://stackoverflow.com/questions/37713126/bootstrap-show-file-name-after-select)
+-   Custom label input field upload file. I used [Stackoverflow](https://stackoverflow.com/questions/37713126/bootstrap-show-file-name-after-select)
 
 -   For the animation hamburger menu' I used [MDBootstrap](https://mdbootstrap.com/docs/standard/extended/hamburger-menu/)
 
@@ -230,7 +234,5 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   All Images were downloaded from [Unsplash](https://unsplash.com/s/photos/electric-skateboard).
 
 ### Acknowledgements
-
--   My Mentor for continuous helpful feedback.
 
 -   Tutor support at Code Institute for their support.
