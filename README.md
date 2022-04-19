@@ -153,11 +153,12 @@ The W3C Markup Validator, W3C CSS Validator and JSHINT Validator Services were u
     - [Samsung_Galaxy_s8+](assets/images/readme_truffle_imgs/devices_view/op_samsung_galaxy_s8+.jpg)
     - [Nest_Hub](assets/images/readme_truffle_imgs/devices_view/op_tablet_nes_hub.jpg)
     - [Nest_Hub_Max](assets/images/readme_truffle_imgs/devices_view/op_tablet_nest_hub_max.jpg)
-3.   A large amount of testing was done to ensure that all pages were linking correctly [view](img/manual_testing/manual_testing.jpg).
+3.   A large amount of testing was done to ensure that all pages were linking correctly [view](assets/images/readme_truffle_imgs/manual_testing/manual_testing_doc.jpg).
 4.   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs/Errors
 
+-   Error on Steakhouse.html : [view](assets/images/readme_truffle_imgs/bugs_errors/whereto_steakhouse_coord_error.jpg).
 -   Error on Github hosted pages : [view](assets/images/readme_truffle_imgs/bugs_errors/error_cohort.jpg).
 -   What Stackoverflow say: [view](assets/images/readme_truffle_imgs/bugs_errors/permissions_policy_interest_cohort.jpg).
 -   What GitHub say: [view](assets/images/readme_truffle_imgs/bugs_errors/github_permissions_policy_interest_cohort.jpg)
