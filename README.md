@@ -2,7 +2,11 @@
 
 [View the live project here.](https://babalu2017.github.io/truffle_hunter/) 
 
+ ### Rationale for the development of the project
+
 This website has the intent to help people to find the best spots in London where to work remotely or where to spend their freetime.I used google maps Api and I placed them at the top the page because it gives the design a visual flow that directs the users in the way they can easily find in the area of their research what they need. I saw many blogs that have similar purposes but every time as user I was been redirect to other page.
+
+<h2 align="center"><img src="assets/images/readme_truffle_imgs/how_it_looks_devices.jpg"></h2>
 
 -   ### Design
     -   #### Colour Scheme
@@ -12,7 +16,6 @@ This website has the intent to help people to find the best spots in London wher
     -   #### Imagery
         -   Imagery is important. I used imgages(free lincence on unsplash) and I used photoshop to make them web-friendly(resizing).
 
-<h2 align="center"><img src="assets/images/readme_truffle_imgs/how_it_looks_devices.jpg"></h2>
 
 
 ## User Experience (UX)
