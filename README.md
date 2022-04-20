@@ -2,7 +2,15 @@
 
 [View the live project here.](https://babalu2017.github.io/truffle_hunter/) 
 
-This website has the intent to help people to find the best spots in London where to work remotely or where to spend your freetime.
+This website has the intent to help people to find the best spots in London where to work remotely or where to spend their freetime.I used google maps Api and I placed them at the top the page because it gives the design a visual flow that directs the users in the way they can easily find in the area of their research what they need. I saw many blogs that have similar purposes but every time as user I was been redirect to other page.
+
+-   ### Design
+    -   #### Colour Scheme
+        -   The main colours used are black, gray and white provided by bootstrap. Those colors provide a more elegant look to the website.
+    -   #### Typography
+        -    I used the default bootstrap font-family Verdana, Geneva, Tahoma. The font is used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. I think this font is a clean and it is used frequently in programming, so it is both attractive and appropriate.
+    -   #### Imagery
+        -   Imagery is important. I used imgages(free lincence on unsplash) and I used photoshop to make them web-friendly(resizing).
 
 <h2 align="center"><img src="assets/images/readme_truffle_imgs/how_it_looks_devices.jpg"></h2>
 
@@ -22,7 +30,7 @@ This website has the intent to help people to find the best spots in London wher
 
         1. As a Returning Visitor, I want to find information about new spots. [view](assets/images/readme_truffle_imgs/op_spots_where_to.jpg)
 
-        2. As a Returning Visitor, I want to find the best way to get in contact with the website owner. [view](assets/images/readme_truffle_imgs/op_contact_us_form.jpg)
+        2. As a Returning Visitor, I want to find the best way to get in contact with the website's owner. [view](assets/images/readme_truffle_imgs/op_contact_us_form.jpg)
         
 
     -   #### Frequent User Goals
@@ -30,14 +38,6 @@ This website has the intent to help people to find the best spots in London wher
 
 
         2. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation. [view](assets/images/readme_truffle_imgs/op_newsletter.jpg)
-
--   ### Design
-    -   #### Colour Scheme
-        -   The main colours used are black, gray and white provided by bootstrap.
-    -   #### Typography
-        -    I used the default bootstrap font-family Verdana, Geneva, Tahoma. The font is used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. I think this font is a clean and it is used frequently in programming, so it is both attractive and appropriate.
-    -   #### Imagery
-        -   Imagery is important. I used imgs(free lincence) and I used photoshop to make them web-friendly(resizing them).
 
 *   ### Wireframes
 
